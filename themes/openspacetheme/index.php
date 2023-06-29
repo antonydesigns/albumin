@@ -1,1 +1,20 @@
-<?php echo "this is the open space theme";
+<?php
+
+/**
+ * Fallback Page
+ * @package OpenSpaceTheme
+ */
+
+// DEFAULT INDEX
+
+get_header();
+?>
+
+<main class="mt-10">
+
+    Hello there
+
+</main>
+
+
+<?php get_footer(); ?>
