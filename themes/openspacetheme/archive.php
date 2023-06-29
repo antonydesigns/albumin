@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Fallback Page
+ * Archive
  * @package OpenSpaceTheme
  */
 
@@ -12,7 +12,7 @@ get_header();
 
 <main class="mt-10">
 
-    Hello there
+    Archive
 
 </main>
 

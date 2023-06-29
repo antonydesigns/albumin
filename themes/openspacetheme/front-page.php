@@ -12,7 +12,7 @@ get_header();
 
 <main class="mt-10">
 
-    Hello there
+    Front Page
 
 </main>
 

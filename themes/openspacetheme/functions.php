@@ -1,7 +1,11 @@
 <?php
 
-// CSS
+/**
+ * Functions
+ * @package OpenSpaceTheme
+ */
 
+// CSS
 
 function register_styles()
 {
@@ -20,6 +24,10 @@ function theme_supports()
     add_theme_support('custom-logo');
 
     add_theme_support('post-thumbnails');
+
+    add_theme_support('custom-background', [
+        'default-color' => '#CBCBCB',
+    ]);
 
     add_image_size("featured-thumbnail", 350, 233, true);
 
