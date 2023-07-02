@@ -19,8 +19,8 @@ function photos_cpt_init()
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => null,
-        'supports'           => array('title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'),
+        'supports'           => array('title', 'editor', 'thumbnail'),
     );
 
-    register_post_type('book', $args);
+    register_post_type('photos', $args);
 }

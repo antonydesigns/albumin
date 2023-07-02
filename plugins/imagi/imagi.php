@@ -12,6 +12,12 @@ if (!defined('ABSPATH')) {
     die("Resource not accessible by direct URL");
 }
 
-include('functions/photos-cpt-init.php');
+// Create Custom Post Type called Photos
 
+include('functions/photos-cpt-init.php');
 add_action('init', 'photos_cpt_init');
+
+// Create Custom Fields
+
+include('functions/photos-cf-init.php');
+add_action('admin_init', 'photos_cf_init');
