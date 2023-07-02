@@ -27,3 +27,13 @@ function gallery_content()
 
 <?php
 }
+
+/* function save_photo()
+{
+        $work_title = $_POST['work_title'];
+
+        global $wpdb;
+
+        $wpdb->$prefix.
+}
+ */

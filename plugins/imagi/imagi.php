@@ -21,3 +21,6 @@ add_action('init', 'photos_cpt_init');
 
 include('functions/photos-cf-init.php');
 add_action('admin_init', 'photos_cf_init');
+
+include('functions/photos-create-database.php');
+register_activation_hook(__FILE__, 'photos_create_database');
