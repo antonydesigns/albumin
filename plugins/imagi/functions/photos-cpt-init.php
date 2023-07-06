@@ -24,5 +24,3 @@ function photos_cpt_init()
 
     register_post_type('photos', $args);
 }
-
-add_action('init', 'photos_cpt_init');

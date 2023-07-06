@@ -1,9 +1,7 @@
 <?php
 
-function photos_create_page()
+function photos_create_page($page_title)
 {
-    $page_title = 'Products';
-
     if (post_exists($page_title, '', '', 'page',) != 0) return;
 
     $products = [
