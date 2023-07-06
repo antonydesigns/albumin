@@ -35,3 +35,5 @@ function custom_field_content()
 
 <?php
 }
+
+add_action('admin_init', 'photos_cf_init');
