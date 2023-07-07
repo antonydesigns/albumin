@@ -14,6 +14,8 @@ get_header();
 
     Front Page
 
+    <?php include("components/box.php"); ?>
+
 </main>
 
 

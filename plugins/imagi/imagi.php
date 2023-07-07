@@ -40,16 +40,16 @@ function product_template($template)
 
 add_filter('template_include', 'product_template');
 
-// Add stylesheet
+// Default stylesheet (based on Tailwind)
+// Uncomment to override with theme style
 
 function add_style()
 {
-    $path = plugin_dir_url(__FILE__) . 'style/style.css';
-    wp_register_style('style', $path);
-    wp_enqueue_style('style', $path);
+    wp_register_style('style', plugin_dir_url(__FILE__) . 'style/style.css');
+    wp_enqueue_style('style');
 }
 
-add_action('wp_enqueue_scripts', 'add_style');
+add_action('wp_enqueue_scripts', 'add_style', 99); // or delete the '99' (lowers priority)
 
 // Assign Custom Post Type to Custom Template
 

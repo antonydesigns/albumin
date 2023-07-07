@@ -526,9 +526,43 @@ video {
   margin-top: 2.5rem;
 }
 
+.flex {
+  display: flex;
+}
+
+.table {
+  display: table;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-green-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+}
+
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.text-purple-500 {
+  --tw-text-opacity: 1;
+  color: rgb(168 85 247 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {

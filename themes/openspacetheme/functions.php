@@ -9,7 +9,7 @@
 
 function register_styles()
 {
-    wp_register_style('tailwind', get_template_directory_uri() . '/tailwind-output.css', [], false, 'all');
+    wp_register_style('tailwind', get_template_directory_uri() . '/tailwind-output.css');
     wp_enqueue_style('tailwind');
 }
 
