@@ -17,13 +17,19 @@ add_action('wp_enqueue_scripts', 'register_styles');
 
 // THEME SUPPORT
 
+add_action('after_setup_theme', 'theme_supports', 99);
+
 function theme_supports()
 {
     add_theme_support('title-tag');
 
     add_theme_support('custom-logo');
 
-    add_theme_support('post-thumbnails');
+    add_theme_support('post-thumbnails', [
+        'post',
+        'page',
+        'photos',
+    ]);
 
     add_theme_support('custom-background', [
         'default-color' => '#CBCBCB',
@@ -45,4 +51,4 @@ function theme_supports()
     add_theme_support('align-wide');
 }
 
-add_action('after_setup_theme', 'theme_supports');
+// flush_rewrite_rules();

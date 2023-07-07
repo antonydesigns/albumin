@@ -12,7 +12,6 @@ if (!defined('ABSPATH')) {
 }
 
 // Create Custom Post Type called Photos
-add_action('init', 'photos_cpt_init');
 include('functions/photos-cpt-init.php');
 
 // Create Custom Fields
@@ -41,7 +40,7 @@ function product_template($template)
 add_filter('template_include', 'product_template');
 
 // Default stylesheet (based on Tailwind)
-// Uncomment to override with theme style
+// Comment to override with theme style
 
 function add_style()
 {
@@ -49,7 +48,7 @@ function add_style()
     wp_enqueue_style('style');
 }
 
-add_action('wp_enqueue_scripts', 'add_style', 99); // or delete the '99' (lowers priority)
+add_action('wp_enqueue_scripts', 'add_style'); // or delete the '99' (lowers priority)
 
 // Assign Custom Post Type to Custom Template
 
@@ -58,7 +57,7 @@ function gallery($template)
     global $post;
 
     if ($post->post_type === 'photos') {
-        return plugin_dir_path(__FILE__) . 'templates/gallery.php';
+        return plugin_dir_path(__FILE__) . 'templates/photo.php';
     }
 }
 
