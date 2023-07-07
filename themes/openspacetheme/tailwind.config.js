@@ -3,7 +3,8 @@ module.exports = {
   content: [
     "./*.{php, html, js}", // theme root folder
     "./components/*.{php, html, js}",
-    // add more folders
+
+    // apply Tailwind to plugins
     "../../plugins/imagi/**/*.{php, html, js}",
   ],
   theme: {

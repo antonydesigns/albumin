@@ -522,8 +522,24 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -532,6 +548,14 @@ video {
 
 .table {
   display: table;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-24 {
@@ -550,6 +574,15 @@ video {
   justify-content: center;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .bg-green-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
@@ -560,9 +593,17 @@ video {
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 }
 
+.lowercase {
+  text-transform: lowercase;
+}
+
 .text-purple-500 {
   --tw-text-opacity: 1;
   color: rgb(168 85 247 / var(--tw-text-opacity));
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .hover\:underline:hover {
