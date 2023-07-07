@@ -17,25 +17,17 @@ add_action('wp_enqueue_scripts', 'register_styles');
 
 // THEME SUPPORT
 
-add_action('after_setup_theme', 'theme_supports', 99);
-
 function theme_supports()
 {
     add_theme_support('title-tag');
 
     add_theme_support('custom-logo');
 
-    add_theme_support('post-thumbnails', [
-        'post',
-        'page',
-        'photos',
-    ]);
-
     add_theme_support('custom-background', [
         'default-color' => '#CBCBCB',
     ]);
 
-    add_image_size("featured-thumbnail", 350, 233, true);
+    add_theme_support('post-thumbnails', array('post', 'page', 'photos'));
 
     add_theme_support('customize-selective-refresh-widgets');
 
@@ -50,5 +42,7 @@ function theme_supports()
 
     add_theme_support('align-wide');
 }
+
+add_action('after_setup_theme', 'theme_supports');
 
 // flush_rewrite_rules();
